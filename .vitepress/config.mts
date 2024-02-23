@@ -1,9 +1,11 @@
 import { defineConfig } from 'vitepress'
+import packageJson from '../package.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  lang: 'en-US',
+  title: "Sarah Bengtsson",
+  description: packageJson.description,
   base: "/Sarah-Bengtsson/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -23,7 +25,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/haoranpb/Sarah-Bengtsson' }
     ]
   }
 })
